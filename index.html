@@ -11,17 +11,15 @@
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-  </nav>
-  </div>
 
-  <img src="./imagenes/banner 1.png" alt="Logo farmacia" >
+      </div>
+    </div>
+  </nav>
+
+  <img src="./imagenes/banner 1.png" alt="Logo farmacia">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
@@ -29,13 +27,12 @@
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse fw-bold" id="navbarNavAltMarkup">
         <div class="navbar-nav d-flex justify-content-between w-100 mx-4">
           <li class="nav-item dropdown position-static">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu dropdown-menu-light w-100 row ">
+              CATEGORIAS </a>
+            <ul class="dropdown-menu dropdown-menu-light w-100 row p-4 ">
               <li class="dropdown-header" href="#">PERFUMES</li>
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -43,40 +40,97 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li class="dropdown-header" href="#">Mamá y Bebé</li>
+              <li class="dropdown-header" href="#">MAMÁ Y BEBE</li>
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li class="dropdown-header" href="#">Cuidado personal</li>
+              <li class="dropdown-header" href="#">CUIDADO PERSONAL</li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li class="dropdown-header" href="#">Cuidado oral</li>
+              <li class="dropdown-header" href="#">CUIDADO ORAL</li>
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
 
               <hr class="dropdown-divider">
-              <li class="dropdown-header" href="#">Maquillaje</li>
+              <li class="dropdown-header" href="#">MAQUILLAJE</li>
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <a class="nav-link font-weight-bold" href="nuestraHistoria.html">Nuestra Historia</a>
-          <a class="nav-link font-weight-bold" href="turnos.html">Turnero digital</a>
-          <a class="nav-link font-weight-bold" href="obraSociales.html">Obras Sociales</a>
-          <a class="nav-link font-weight-bold" href="contactanos.html">Contactanos</a>
+          <a class="nav-link font-weight-bold fw-bold" href="nuestraHistoria.html">NUESTRA HISTORIA</a>
+          <a class="nav-link font-weight-bold fw-bold" href="turnos.html">TURNERO DIGITAL</a>
+          <a class="nav-link font-weight-bold fw-bold" href="obraSociales.html">OBRAS SOCIALES</a>
+          <a class="nav-link font-weight-bold fw-bold" href="contactanos.html">CONTACTANOS</a>
         </div>
       </div>
     </div>
   </nav>
 </header>
 
-<body>
+<body class="conteiner">
+  <p class="h2 text-center fs-2 fw-bold m-3">OFERTAS MENSUALES</p>
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imagenes/ofertas3juntas.png" class="d-block w-100" alt="imagencarrusel1">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/ofertas3juntas.png" class="d-block w-100" alt="imagencarrusel2">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/ofertas3juntas.png" class="d-block w-100" alt="imagencarrusel3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carrusel  carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row p-3 m-5">
+    <img src="./imagenes/enviosDeRecetas.png" class="rounded col-6" alt="...">
+    <img src="./imagenes/formasDePagos.png" class="rounded col-6" alt="...">
+  </div>
+
+
+  <section class="row m-sm-5 p-sm-5">
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/perfumes.png" class="w-100" alt="Categoria perfumes"></a>
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/mama y bebe.png" class="w-100" alt="Categoria mama y bebe"></a>
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/maquillajeGrupo2.png" class="w-100" alt="Categoria maquillaje"></a>
+  </section>
+
+  <section class="row m-sm-5 p-sm-5">
+    <a class="col-3 d-block  mx-auto" href="#">
+      <img src="./imagenes/cuidadoPersonal.png" class="w-100" alt="Categoria perfumes"></a>
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/dermocosmetica.png" class="w-100" alt="Categoria mama y bebe"></a>
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/cuidadoOral.png" class="w-100" alt="Categoria maquillaje"></a>
+  </section>
+
+  <p class="h2 text-center fs-2 fw-bold m-sm-5 p-sm-5">OBRAS SOCIALES</p>
+
+  <section class="row m-sm-5 p-sm-5">
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/swiss.png" class="w-100" alt="Categoria perfumes"></a>
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/pami.png" class="w-100" alt="Categoria mama y bebe"></a>
+    <a class="col-3 d-block mx-auto" href="#">
+      <img src="./imagenes/apross.png" class="w-100 ju" alt="Categoria maquillaje"></a>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
