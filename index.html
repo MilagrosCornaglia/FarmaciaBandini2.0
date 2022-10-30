@@ -8,7 +8,9 @@
   <title>Farmacia Bandini</title>
   <link rel="icon" type="image/x-icon" href="../imagenes/favicon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
   <link rel="stylesheet" href="../css/estilos.css">
+
 </head>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
@@ -18,8 +20,19 @@
       </div>
     </div>
   </nav>
+  <nav class="navbar bg-light float-end">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
 
-  <img src="./imagenes/banner 1.png" alt="Logo farmacia">
+  <img src="./imagenes/banner 1.png" class="img-thumbnail col-3 row float-left w-25" alt="Logo farmacia">
+
+  
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
@@ -74,30 +87,26 @@
 </header>
 
 <body class="conteiner">
-  <p class="h2 text-center fs-2 fw-bold m-3">OFERTAS MENSUALES</p>
-  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./imagenes/ofertas3juntas.png" class="d-block w-100" alt="imagencarrusel1">
-      </div>
-      <div class="carousel-item">
-        <img src="./imagenes/ofertas3juntas.png" class="d-block w-100" alt="imagencarrusel2">
-      </div>
-      <div class="carousel-item">
-        <img src="imagenes/ofertas3juntas.png" class="d-block w-100" alt="imagencarrusel3">
-      </div>
+  <section class="splide" aria-labelledby="carousel-heading">
+    <p id="carousel-heading" class="h2 text-center fs-2 fw-bold m-sm-3 p-sm-3">OFERTAS MENSUALES</p>
+  
+    <div class="splide__track">
+      <ul class="splide__list">
+        <img src="./imagenes/oferta01.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta02.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta03.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta01.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta02.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta03.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta01.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta02.png" class="splide__slide bg-primary rounded px-3 py-2">
+        <img src="./imagenes/oferta03.png" class="splide__slide bg-primary rounded px-3 py-2">
+      </ul>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carrusel  carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
+ 
 
-  <div class="row p-3 m-5">
+  <div class="row p-1 m-1">
     <img src="./imagenes/enviosDeRecetas.png" class="rounded col-6" alt="...">
     <img src="./imagenes/formasDePagos.png" class="rounded col-6" alt="...">
   </div>
@@ -105,20 +114,20 @@
 
   <section class="row m-sm-5 p-sm-5">
     <a class="col-3 d-block mx-auto" href="#">
-      <img src="./imagenes/perfumes.png" class="w-100" alt="Categoria perfumes"></a>
+      <img src="./imagenes/perfumes (1).png" class="w-100" alt="Categoria perfumes"></a>
     <a class="col-3 d-block mx-auto" href="#">
-      <img src="./imagenes/mama y bebe.png" class="w-100" alt="Categoria mama y bebe"></a>
+      <img src="./imagenes/mamaYBebe01.png" class="w-100" alt="Categoria mama y bebe"></a>
     <a class="col-3 d-block mx-auto" href="#">
-      <img src="./imagenes/maquillajeGrupo2.png" class="w-100" alt="Categoria maquillaje"></a>
+      <img src="./imagenes/maquillaje01.png" class="w-100" alt="Categoria maquillaje"></a>
   </section>
 
   <section class="row m-sm-5 p-sm-5">
     <a class="col-3 d-block  mx-auto" href="#">
-      <img src="./imagenes/cuidadoPersonal.png" class="w-100" alt="Categoria perfumes"></a>
+      <img src="./imagenes/cuidadoCorporal01.png" class="w-100" alt="Categoria perfumes"></a>
     <a class="col-3 d-block mx-auto" href="#">
-      <img src="./imagenes/dermocosmetica.png" class="w-100" alt="Categoria mama y bebe"></a>
+      <img src="./imagenes/dermocosmetica01.png" class="w-100" alt="Categoria mama y bebe"></a>
     <a class="col-3 d-block mx-auto" href="#">
-      <img src="./imagenes/cuidadoOral.png" class="w-100" alt="Categoria maquillaje"></a>
+      <img src="./imagenes/cuidadoOral01.png" class="w-100" alt="Categoria maquillaje"></a>
   </section>
 
   <p class="h2 text-center fs-2 fw-bold m-sm-5 p-sm-5">OBRAS SOCIALES</p>
@@ -138,6 +147,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script>
+
+    var splide = new Splide('.splide', {
+      type   : 'loop',
+      focus: 0,
+      height: '12rem',
+      autoWidth: true,
+      autoplay: true,
+      gap    : '.7rem',
+    });
+    splide.mount( window.splide.Extensions );
+  </script>
 </body>
 
 </html>
