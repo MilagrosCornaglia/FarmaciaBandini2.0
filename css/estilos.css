@@ -1,6 +1,6 @@
 :root {
     --bs-primary: #99FF99;
-    --bs-secondary: #6c757d;
+    --bs-secondary: #32654E;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
@@ -19,11 +19,19 @@
 }
 
 .h2 {
-    color:#097007;
+    color:#32654E;
 }
 
 .carrusel {
     color: #097007;
 }
 
-@media 
+.navbar2
+{ width: 25%;
+    height: 50px;
+    background-color: #32654E;
+    opacity: 60%;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    text-align:center;
+    color:white ;}
