@@ -1,0 +1,26 @@
+{
+  "name": "farmacia-bandini-web",
+  "version": "1.0.0",
+  "description": "Landing page Farmacia Bandini",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilagrosCornaglia/FarmaciaBandini2.0.git"
+  },
+  "author": "Milagros Cornaglia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilagrosCornaglia/FarmaciaBandini2.0/issues"
+  },
+  "homepage": "https://github.com/MilagrosCornaglia/FarmaciaBandini2.0#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.2",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

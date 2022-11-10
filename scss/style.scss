@@ -1,0 +1,22 @@
+// Default variable overrides
+
+$primary: #99FF99;
+$secondary: #32654E;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.navbar2 {
+    width: 25%;
+    height: 50px;
+    background-color: #32654E;
+    opacity: 60%;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    text-align: center;
+    color: white;
+}
