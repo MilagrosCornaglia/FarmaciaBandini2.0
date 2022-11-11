@@ -11,84 +11,90 @@
   <link rel="stylesheet" href="../css/main.css">
 
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
+<body>
+
+  <header>
+    <!-- Barra de arriba -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary p-3">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
       </div>
-    </div>
-  </nav>
-  <nav class="navbar bg-light float-end">
-    <div class="container-fluid">
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-  </nav>
+    </nav>
 
-  <img src="./imagenes/banner 1.png" class="img-thumbnail col-3 row float-left w-25" alt="Logo farmacia">
+    <!-- Barra de busqueda -->
+    <nav class="navbar bg-light float-end">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar por producto" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
 
-  
+    <!-- Logo -->
+    <a class="col-3 row float-left w-25" href="./index.html">
+      <img src="./imagenes/banner 1.png" class="img-thumbnail " alt="Logo farmacia">
+    </a>
 
+    <!-- Bara de menú -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fw-bold" id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex justify-content-between w-100 mx-4">
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                CATEGORIAS </a>
+              <ul class="dropdown-menu dropdown-menu-light w-100 row p-4 ">
+                <li class="dropdown-header" href="#">PERFUMES</li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-header" href="#">MAMÁ Y BEBE</li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-header" href="#">CUIDADO PERSONAL</li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-header" href="#">CUIDADO ORAL</li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse fw-bold" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-flex justify-content-between w-100 mx-4">
-          <li class="nav-item dropdown position-static">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              CATEGORIAS </a>
-            <ul class="dropdown-menu dropdown-menu-light w-100 row p-4 ">
-              <li class="dropdown-header" href="#">PERFUMES</li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li>
                 <hr class="dropdown-divider">
-              </li>
-              <li class="dropdown-header" href="#">MAMÁ Y BEBE</li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li class="dropdown-header" href="#">CUIDADO PERSONAL</li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li class="dropdown-header" href="#">CUIDADO ORAL</li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-              <hr class="dropdown-divider">
-              <li class="dropdown-header" href="#">MAQUILLAJE</li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <a class="nav-link font-weight-bold fw-bold" href="nuestraHistoria.html">NUESTRA HISTORIA</a>
-          <a class="nav-link font-weight-bold fw-bold" href="turnos.html">TURNERO DIGITAL</a>
-          <a class="nav-link font-weight-bold fw-bold" href="obraSociales.html">OBRAS SOCIALES</a>
-          <a class="nav-link font-weight-bold fw-bold" href="contactanos.html">CONTACTANOS</a>
+                <li class="dropdown-header" href="#">MAQUILLAJE</li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <a class="nav-link font-weight-bold fw-bold" href="nuestraHistoria.html">NUESTRA HISTORIA</a>
+            <a class="nav-link font-weight-bold fw-bold" href="turnos.html">TURNERO DIGITAL</a>
+            <a class="nav-link font-weight-bold fw-bold" href="obraSociales.html">OBRAS SOCIALES</a>
+            <a class="nav-link font-weight-bold fw-bold" href="contactanos.html">CONTACTANOS</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<body class="conteiner">
+  <!-- Carrusel -->
   <section class="splide" aria-labelledby="carousel-heading">
     <h2 id="carousel-heading" class="text-secondary text-center fs-2 fw-bold m-sm-3 p-sm-3">OFERTAS MENSUALES</h2>
-  
+
     <div class="splide__track">
       <ul class="splide__list">
         <img src="./imagenes/oferta01.png" class="splide__slide bg-primary rounded px-3 py-2">
@@ -103,14 +109,14 @@
       </ul>
     </div>
   </section>
- 
 
+  <!-- Formas de pagos -->
   <div class="row p-1 m-1">
     <img src="./imagenes/enviosDeRecetas.png" class="rounded col-6" alt="...">
     <img src="./imagenes/formasDePagos.png" class="rounded col-6" alt="...">
   </div>
 
-
+  <!-- Categorias -->
   <section class="row m-sm-5 p-sm-5">
     <a class="col-3 d-block mx-auto" href="#">
       <img src="./imagenes/perfumes (1).png" class="w-100" alt="Categoria perfumes"></a>
@@ -129,6 +135,7 @@
       <img src="./imagenes/cuidadoOral01.png" class="w-100" alt="Categoria maquillaje"></a>
   </section>
 
+  <!-- Obras sociales -->
   <h2 class="text-center fs-2 fw-bold m-sm-5 p-sm-5 text-secondary">OBRAS SOCIALES</h2>
 
   <section class="row m-sm-5 p-sm-5">
@@ -140,25 +147,27 @@
       <img src="./imagenes/apross.png" class="w-100 ju" alt="Categoria maquillaje"></a>
   </section>
 
+  <!-- Javascript -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   <script>
 
     var splide = new Splide('.splide', {
-      type   : 'loop',
+      type: 'loop',
       focus: 0,
       height: '12rem',
       autoWidth: true,
       autoplay: true,
-      gap    : '.7rem',
+      gap: '.7rem',
     });
-    splide.mount( window.splide.Extensions );
+    splide.mount(window.splide.Extensions);
   </script>
 </body>
 

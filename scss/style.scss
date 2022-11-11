@@ -9,14 +9,42 @@ $danger: #dc3545;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$farmacia-border-radius: 10px;
+
+@mixin strong-secondary-shadow {
+    box-shadow: 0 .5rem 1rem rgba($secondary, 1);
+}
+
+@mixin secondary-shadow {
+    box-shadow: 0 .5rem 1rem rgba($secondary, .30);
+}
+
+@mixin bottom-border {
+    border-end-start-radius: $farmacia-border-radius;
+    border-end-end-radius: $farmacia-border-radius;
+}
 
 .navbar2 {
+    @include bottom-border();
     width: 25%;
     height: 50px;
-    background-color: #32654E;
+    background-color: $secondary;
     opacity: 60%;
-    border-end-start-radius: 10px;
-    border-end-end-radius: 10px;
     text-align: center;
     color: white;
+}
+
+.farmacia-de-turno {
+    @include secondary-shadow();
+    border-radius: $farmacia-border-radius;
+    line-height: 44px;
+    transition: box-shadow 1s;
+
+    &:hover {
+        @include strong-secondary-shadow();
+    }
+}
+
+.farmacia-box {
+    border-radius: $farmacia-border-radius;
 }
