@@ -1,27 +1,19 @@
 // Default variable overrides
+@import "bs_colors";
 
-$primary: #99FF99;
-$secondary: #32654E;
-$success: #198754;
-$info: #0dcaf0;
-$warning: #ffc107;
-$danger: #dc3545;
+@import "configuracion";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 $farmacia-border-radius: 10px;
 
-@mixin strong-secondary-shadow {
-    box-shadow: 0 .5rem 1rem rgba($secondary, 1);
-}
+@import "bordes";
 
-@mixin secondary-shadow {
-    box-shadow: 0 .5rem 1rem rgba($secondary, .30);
-}
-
-@mixin bottom-border {
-    border-end-start-radius: $farmacia-border-radius;
-    border-end-end-radius: $farmacia-border-radius;
+body {
+    color: map-get($font, color);
+    font-family: map-get($font, family);
+    font-size: map-get($font, size);
+    line-height: map-get($font, line-height);
 }
 
 .navbar2 {

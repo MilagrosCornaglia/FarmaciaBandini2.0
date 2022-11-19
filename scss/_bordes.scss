@@ -1,0 +1,13 @@
+
+@mixin strong-secondary-shadow {
+    box-shadow: 0 .5rem 1rem rgba($secondary, 1);
+}
+
+@mixin secondary-shadow {
+    box-shadow: 0 .5rem 1rem rgba($secondary, .30);
+}
+
+@mixin bottom-border {
+    border-end-start-radius: $farmacia-border-radius;
+    border-end-end-radius: $farmacia-border-radius;
+}
