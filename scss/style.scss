@@ -29,7 +29,7 @@ hr {
 
 .navbar2 {
     @include bottom-border();
-    width: 25%;
+    width: auto;
     height: 50px;
     background-color: $secondary;
     opacity: 60%;
@@ -56,5 +56,5 @@ hr {
     border-radius: $farmacia-border-radius;
 
     border: 6px solid $primary;
-    border-bottom: 70px solid $primary
+    border-bottom: 40px solid $primary
 }
