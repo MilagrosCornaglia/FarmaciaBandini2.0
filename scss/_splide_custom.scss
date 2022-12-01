@@ -1,0 +1,9 @@
+
+.splide__pagination__page {
+    background: #2c2a25;
+}   
+
+.splide__pagination__page.is-active {
+    background:$secondary;
+    transform: scale(1.5);
+    }
